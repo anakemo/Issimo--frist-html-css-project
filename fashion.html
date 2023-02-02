@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>fashion </title>
+</head>
+<body>
+    <header>
+        <div class="headerfirsline">
+            <div  class="burgerMenu" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+                <div class="logobox">
+                    <a href="index.html"><h1 class="logo">issimo</h1></a>
+                    <p class="logoboxp">Embraces the passion and soul of Italy s superlatives in life and living</p>
+                </div>
+                <div class="iconcontainer">
+                    <div class="searchicon" id="searchicon" onclick=search() ></div>
+                    <div class="personicon" id="personicon" onclick=openPersonArea() ></div>
+                    <!-- <div class="bagicon"></div> -->
+                </div>
+        
+        </div>
+                
+           <div class="headersecondline">
+            <div class="navwraper" id="navwraper">
+                <ul class="navigaciaUl" id="navigaciaUl"></ul>
+            </div>
+           </div>     
+               
+        
+        
+                <div id="sidenav" class="sidenav" itemid="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="sidenavigaciaUl" id="sidenavigaciaUl"></ul>
+        
+                 
+                  </div>
+                
+        
+        
+                
+            </header>
+    <main>
+        <!-- this are hidden menus for icons -->
+
+        <div class="searchiconhide" id="searchiconhide">
+            <p class="close" id="close" onclick=hide() > X </p>
+            <label for="searchinput">SEARCH ISSIMOISSIMO.COM
+            </label>
+            <div class="searchbox">
+                <p class="product">PRODUCT</p><input type="search" name="searchinput" id="searchinput">
+            </div>
+            
+        </div>
+
+
+        <div class="personiconhide" id="personiconhide">
+            <p class="closepersonalarea" onclick=hidePersonArea() > X </p>
+            <div class="wishlist">
+                <h2> WISHLIST </h2>
+                 <p>Your Wishlist is currently empty.</p>
+            </div>
+            <div class="login">
+                <h2>LOGIN</h2>
+                <input type="text" name="username" id="usarname">
+                
+                <input type="password" name="password" id="password">
+                <div class="remember">
+                    <label for="rememberme">remember me </label>
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    <input type="submit" value="SIGN IN">
+                
+                </div>
+                
+                <p> <a href="#">FORGET PASSWOR</a></p>
+            </div>
+
+        </div>
+
+        <!-- till here  -->
+
+<div class="homedecortextcontainer">
+    <p> <b>CHICISSIMO</b></p>
+    <p> <i>from chic, adj superlative/ Absolutely stylish. <br> From Marie-Louise’s hand-picked favorites to one-of-kind collaborations,<br> sartorial musings, finery and accessories that bring out the Italian in you.</i>
+
+        </p>
+</div>
+
+<div class="fashionarticle1">
+    <h2>How to Transition Into Fall, the ISSIMO Way</h2>
+    <div class="image">
+        <img src="image/automnstyle.webp" alt="">
+    </div>
+    <h3>With these stylish pieces, you’ll be ready to shift into autumn weather</h3>
+    <p>Yes, it’s still hot outside, but, not long from now, the first hints of fall will be coming our way. While saying goodbye to summer can be a difficult task for many, we’re actually pretty excited about the change of weather, from the chill in the air to the sound of crisp autumn leaves gently falling on the pavement as we return to the city.
+
+        Not ready to let go of your sunny season favourites just yet? No problemo. We’ve listed four ways to transition your summer staples into fall must-haves, and look like a ChicISSIMO Italian lady in the process. </p>
+        <h3>Wear Your Beachy Tote Bag with a Solid Pair of Jeans</h3>
+        <p>Who says you have to archive your tote just because it’s a little chillier outside? Pair your canvas bag with some impenetrable denim (we love this off-white number by Fortela) and an oversized boyfriend jacket, and you’re good to go. Add a playful hand-rolled scarf to stave off any extra chill.</p>
+        <div class="grid">
+            <div class="img">
+                <img src="image/bag1.jpg" alt="bag">
+            </div>
+            <div class="img">
+                <img src="image/trouser1.png" alt="trouser">
+            </div>
+            <div class="img">
+                <img src="image/coatandtrouser1.jpg" alt="coat">
+                
+            </div>
+        </div>
+
+</div>
+<div class="fashionarticle2">
+
+    <div class="maxmarapic">
+        <img src="image/maxmara1.jpg" alt="">
+        
+        
+    </div>
+    <div class="fashionarticletextbox">
+        <h3>Layer Up Your Summer Frock</h3>
+        <p>Before you push your most beloved summer dress to the back of the closet and take out your thick wools, think about layers. A bright dress can be turned into a fall piece by wearing it with plush, velvety loafers and a light jersey coat, plus cosy cotton socks to keep you warm.</p>
+            
+    </div>
+</div>
+<div class="fashionarticle3">
+    <h3>Jazz Up Your Straw Hat</h3>
+    <div class="image">
+        <img src="image/cardigan.webp" alt="cardigan">
+    </div>
+    <p>Fall doesn’t call for beanies or heavy-duty headgear. So make the most of the ‘not-too-cold-yet’ temperatures and keep donning your straw hat – only with a few heavier pieces to complement it. Opt for a chunky cardigan or a poncho for a bohemian look or choose a cashmere scarf for a more elevated outfit.</p>
+
+</div>
+
+
+    </main>
+    <footer>
+            <div class="footercontainer">
+                <div class="footerbox"><img src="./image/logo.svg" alt=""></div>
+                <div class="footerbox">
+                    <p>DISCOVER
+                        <p>
+                            
+                            <a href="homedecor.html">HOME DECOR</a>
+                            <a href="">FASHION</a>
+                            <a href="">BEAUTY</a>
+                            <a href="">SHOP</a>
+                            <a href="">FOOD</a>
+                            <a href="">TRAVEL</a>
+                            <a href="">GIFT GUIDE</a> 
+                        </p>
+                    </p> 
+                </div>
+                <div class="footerbox">
+                    <p>ISSIMO COMPANY
+                    </p>
+                   <a href="">ABOUT</a> 
+                   <a href="">TERMS & CONDITIONS</a>
+    
+                    
+    
+                </div>
+                <div class="footerbox"><p>CUSTOMER CARE
+                </p> 
+               <a href=""> FAQ</a>
+               <a href=""> MY ACCOUNT</a>
+               <a href="">CONTACT</a>
+            </div>
+    
+                <div class="footerbox"><p>CONNECT WITH US
+                </p> 
+                <div class="socicon"> <img src="image/instagram (1).png" alt=""><p> <a href="">INSTAGRAM</a> </p> </div>
+                <div class="socicon"><img src="image/spotify.png" alt=""> <p><a href="">SPOTIFY</a> </p></div>
+                <div class="socicon"><img src="image/facebook (1).png" alt=""> <p><a href="">FACEBOOK</a> </p></div>
+                <div class="socicon"><img src="image/youtube.png" alt=""> <p><a href="">YOUTUBE</a> </p></div>
+    
+    
+            </div>
+                <div class="footerbox">
+    
+                    <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <label for="submit">  <textarea name="emailaddress" id="emailaddress" cols="25" rows="2"> enter your email address</textarea> </label>
+                    <input type="submit" value="submit">
+                    <p>By clicking “SUBMIT,” you agree to receive emails  <br> from ISSIMO and 
+                          accept our web terms of use and Privacy Policy.</p>
+                </div>
+            </div>
+            <p class="reserved">
+                © ISSIMO 2022  I  All Rights Reserved  I  P.Iva</p>
+
+    </footer>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>

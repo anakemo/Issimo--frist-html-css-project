@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title> gallery </title>
+</head>
+<body>
+    <header>
+        <div class="headerfirsline">
+            <div  class="burgerMenu" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+                <div class="logobox">
+                    <a href="index.html"><h1 class="logo">issimo</h1></a>
+                    <p class="logoboxp">Embraces the passion and soul of Italy s superlatives in life and living</p>
+                </div>
+                <div class="iconcontainer">
+                    <div class="searchicon" id="searchicon" onclick=search() ></div>
+                    <div class="personicon" id="personicon" onclick=openPersonArea() ></div>
+                    <!-- <div class="bagicon"></div> -->
+                </div>
+        
+        </div>
+                
+           <div class="headersecondline">
+            <div class="navwraper" id="navwraper">
+                <ul class="navigaciaUl" id="navigaciaUl"></ul>
+            </div>
+           </div>     
+               
+        
+        
+                <div id="sidenav" class="sidenav" itemid="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="sidenavigaciaUl" id="sidenavigaciaUl"></ul>
+        
+                 
+                  </div>
+                
+        
+        
+                
+            </header>
+    <main>
+        <!-- this are hidden menus for icons -->
+
+        <div class="searchiconhide" id="searchiconhide">
+            <p class="close" id="close" onclick=hide() > X </p>
+            <label for="searchinput">SEARCH ISSIMOISSIMO.COM
+            </label>
+            <div class="searchbox">
+                <p class="product">PRODUCT</p><input type="search" name="searchinput" id="searchinput">
+            </div>
+            
+        </div>
+
+
+        <div class="personiconhide" id="personiconhide">
+            <p class="closepersonalarea" onclick=hidePersonArea() > X </p>
+            <div class="wishlist">
+                <h2> WISHLIST </h2>
+                 <p>Your Wishlist is currently empty.</p>
+            </div>
+            <div class="login">
+                <h2>LOGIN</h2>
+                <input type="text" name="username" id="usarname">
+                
+                <input type="password" name="password" id="password">
+                <div class="remember">
+                    <label for="rememberme">remember me </label>
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    <input type="submit" value="SIGN IN">
+                
+                </div>
+                
+                <p> <a href="#">FORGET PASSWOR</a></p>
+            </div>
+
+        </div>
+
+        <!-- till here  -->
+<div class="cardcontaner">
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/Abruzzo-980x470.jpg" alt="abruzo" style="width: 400px;">
+            
+        </div>
+        <p>Abruzo</p>
+        <p class="pcard"> <a href=""> EXPLORE MORE</a></p>
+        
+    </div>
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/campania.jpg" alt="campania" style="width:500px;">
+        </div>
+        <p class="pcard">campania </p>
+        <p class="pcard"> <a href="#"> EXPLORE MORE</a></p>
+    </div>
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/amigliaromania.jpg" alt="emigliaromagnia" style="width:400px;">
+        </div>
+        <p class="pcard">emiglia romagnia</p>
+        <p class="pcard"> <a href="#"> EXPLORE MORE</a></p>
+    </div>
+    
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/lazio.jpg" alt="lazio" style="width: 600px;">
+
+        </div>
+        <p class="pcard">lazio</p>
+        <p class="pcard"> <a href=""> EXPLORE MORE</a></p>
+    </div>
+
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/veneto.jpg" alt="veneto" style="width: 600px;">
+        </div>
+        <p class="pcard">veneto</p>
+        <p class="pcard"> <a href=""> EXPLORE MORE</a></p>
+    </div>
+
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/liguria.jpg" alt="liguria" style="width:1300px;">
+        </div>
+        <p class="pcard">liguria</p>
+        <p class="pcard"> <a href=""> EXPLORE MORE</a></p>
+    </div>
+   
+    
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/sardegnia.jpg" alt="" style="width:400px;">
+        </div>
+        <p class="pcard">sardegnia</p>
+        <p class="pcard"> <a href=""> EXPLORE MORE</a></p>
+    </div>
+
+    <div class="card">
+        <div class="cardimg">
+            <img src="image/toscana.jpg" alt="toscana" style="width:400px;">
+        </div>
+        <p class="pcard">toscana</p>
+        <p class="pcard"> <a href=""> EXPLORE MORE</a></p>
+    </div>
+
+
+    <div class="card">
+        <div class="cardimg9">
+            <img src="image/sicilia.jpg" alt="sicilia" style="width:400px;">
+        </div>
+        <p class="pcard">sicilia</p>
+        <p class="pcard"> <a href=""> EXPLORE MORE</a></p>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+    </main>
+    <footer>
+            <div class="footercontainer">
+                <div class="footerbox"><img src="./image/logo.svg" alt=""></div>
+                <div class="footerbox">
+                    <p>DISCOVER
+                        <p>
+                            
+                            <a href="homedecor.html">HOME DECOR</a>
+                            <a href="">FASHION</a>
+                            <a href="">BEAUTY</a>
+                            <a href="">SHOP</a>
+                            <a href="">FOOD</a>
+                            <a href="">TRAVEL</a>
+                            <a href="">GIFT GUIDE</a> 
+                        </p>
+                    </p> 
+                </div>
+                <div class="footerbox">
+                    <p>ISSIMO COMPANY
+                    </p>
+                   <a href="">ABOUT</a> 
+                   <a href="">TERMS & CONDITIONS</a>
+    
+                    
+    
+                </div>
+                <div class="footerbox"><p>CUSTOMER CARE
+                </p> 
+               <a href=""> FAQ</a>
+               <a href=""> MY ACCOUNT</a>
+               <a href="">CONTACT</a>
+            </div>
+    
+                <div class="footerbox"><p>CONNECT WITH US
+                </p> 
+                <div class="socicon"> <img src="image/instagram (1).png" alt=""><p> <a href="">INSTAGRAM</a> </p> </div>
+                <div class="socicon"><img src="image/spotify.png" alt=""> <p><a href="">SPOTIFY</a> </p></div>
+                <div class="socicon"><img src="image/facebook (1).png" alt=""> <p><a href="">FACEBOOK</a> </p></div>
+                <div class="socicon"><img src="image/youtube.png" alt=""> <p><a href="">YOUTUBE</a> </p></div>
+    
+    
+            </div>
+                <div class="footerbox">
+    
+                    <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <label for="submit">  <textarea name="emailaddress" id="emailaddress" cols="25" rows="2"> enter your email address</textarea> </label>
+                    <input type="submit" value="submit">
+                    <p>By clicking “SUBMIT,” you agree to receive emails  <br> from ISSIMO and 
+                          accept our web terms of use and Privacy Policy.</p>
+                </div>
+            </div>
+            <p class="reserved">
+                © ISSIMO 2022  I  All Rights Reserved  I  P.Iva</p>
+
+    </footer>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html

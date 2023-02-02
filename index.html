@@ -1,0 +1,339 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>home</title>
+</head>
+<body>
+    <header>
+<div class="headerfirsline">
+    <div  class="burgerMenu" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+        <div class="logobox">
+            <a href="index.html"><h1 class="logo">issimo</h1></a>
+            <p class="logoboxp">Embraces the passion and soul of Italy s superlatives in life and living</p>
+        </div>
+        <div class="iconcontainer">
+            <div class="searchicon" id="searchicon" onclick=search() ></div>
+            <div class="personicon" id="personicon" onclick=openPersonArea() ></div>
+            <!-- <div class="bagicon"></div> -->
+        </div>
+
+</div>
+        
+   <div class="headersecondline">
+    <div class="navwraper" id="navwraper">
+        <ul class="navigaciaUl" id="navigaciaUl"></ul>
+    </div>
+   </div>     
+       
+
+
+        <div id="sidenav" class="sidenav" itemid="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="sidenavigaciaUl" id="sidenavigaciaUl"></ul>
+
+         
+          </div>
+        
+
+
+        
+    </header>
+    <main>
+
+        <!-- this are hidden menus for icons -->
+
+        <div class="searchiconhide" id="searchiconhide">
+            <p class="close" id="close" onclick=hide() > X </p>
+            <p class="product">SEARCH ISSIMOISSIMO.COM</p>
+            <div class="searchbox">
+                
+                <label for="searchinput"> search our products
+                </label><input type="search" name="searchinput" class="searchinput" id="searchinput" placeholder="type..">
+            </div>
+            
+        </div>
+
+
+        <div class="personiconhide" id="personiconhide">
+            <p class="closepersonalarea" onclick=hidePersonArea() > X </p>
+    
+            <div class="login">
+                <p>log in</p>
+                <input type="text" name="username" id="usarname">
+                
+                <input type="password" name="password" id="password">
+                <div class="remember">
+                    <label for="rememberme">remember me </label>
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    <button type="submit" class="submit">sign in </button>
+                
+                </div>
+                
+                <p> <a href="#">FORGET PASSWOR</a></p>
+            </div>
+
+        </div>
+
+
+
+
+        
+
+        <div class="inrome">
+
+
+            <div class="issimocontainer">
+                <p class="issimo">  <i>ISSIMO</i>  superlative suffix typically added to an adjective to enhance its meaning to the inimitably remarkable. Exceptional and absolute, Issimo is the final word and the embodiment of the Italian quality of life and love for the very best.
+        
+                </p>
+            </div>
+                
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+    
+        <!-- Full-width slides/quotes -->
+
+
+        <div class="mySlides">
+            <div class="slimg">
+                <img src="image/slaidimg2.webp" alt="" style="width:70%">
+            </div>
+            <div class="sliderimgdescrp">
+                <h3>Why We Love Aperitivo</h3>
+                <p class="sliderp">All you need to know about Italy s Happy Hour</p>
+            </div>
+          
+        </div>
+
+
+
+
+
+        <div class="mySlides">
+            <div class="slimg ">
+                 <img src="image/slaidimg1.webp" alt="" style="width:70%">
+            </div>
+
+
+
+            <div class="sliderimgdescrp">
+                <h3>Scents and sensibility
+                </h3>
+               <p class="sliderp"> Our latest launch captures the essence of Rome and its churches </p>
+            </div>
+            
+          
+        </div>
+      
+      
+        <div class="mySlides">
+            <div class="slimg ">
+            <img src="image/slaidim3.webp" alt="" style="width:70%">
+            </div>
+
+
+        <div class="sliderimgdescrp">
+            <h3>cristmas Gifting for Him
+            </h3>
+           <p class="sliderp">Discover ISSIMO’s curated presents for all the men in your life </p>
+        </div>
+
+
+         
+         
+          
+
+          
+        </div>
+      
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+
+
+
+
+        </div>
+
+
+
+        <div class="secondline">
+            <div class="secondlinebox">
+                <img src="image/cibo1.png" alt="cibo">
+                <div class="centered"> <a href=""> <p>FOOD
+                    BUONISSIMO /Outstandingly delicious: Food & Kitchen Accessories</p></a>
+                    </div>
+            </div>
+            <div class="secondlinebox">
+                <img src="image/fashin2.png" alt="fashion" >
+                <div class="centered"> <a href="fashion.html"> <p>FOOD
+                    BUONISSIMO /Outstandingly delicious: Food & Kitchen Accessories</p></a></div>
+            </div>
+            <div class="secondlinebox">
+                <img src="image/homedecor.png" alt="homedecor" >
+                <div class="centered"> <a href="homedecor.html"> <p>
+                    HOME DECOR
+                    BELLISSIMO / Absolutely beautiful: Home Decor & Artisans</p></a></div>
+            </div>
+            <div class="secondlinebox">
+                <img src="image/beauty.jpg" alt="beauty">
+                <div class="centered"><a href=""><p>BEAUTY
+                    BEAUTISSIMO / Absolutely beautiful: Feeling good & looking good.</p></a></div>
+            </div>
+        </div>
+
+<div class="thirdlinea">
+<!-- <div class="latestreads"><h2> OUR LATEST READS </h2></div> -->
+
+<div class="article">
+    <div class="articleimg">
+        <img src="image/sagre1.png" alt="italysagre">
+        
+    </div>
+    <h4>The Ultimate Guide to Italy&apos;s Sagre</h4>
+    <p>All you need to know about the all-Italian festivals
+        In Italy, we have a saying that goes: “paese che vai, usanza che trovi” (essentially: “different countries, different customs”). When it comes to Italian sagre [SAH-greh], that same concept applies, though on a more hyper-focused level. You could easily say “regione che vai, sagra che trovi,” (because every region has their own sagre). Or “borgo che vai, sagra che trovi” (small towns love their sagre). <a href="blog.html">read more</a> </p>
+
+</div>
+<div class="article">
+    <div class="articleimg"> <img src="image/placeforfall.png" alt="placeforfall"></div>
+    <h4>Three Places We Are Travelling to in September</h4>
+    <p>Summer holidays might be over, but our wanderlust isn&apos;t  which is why we&apos;re already planning our next trip. And so should you.
+
+        The beginning of autumn is the perfect time for an Italian adventure: the weather is cooler, the beaches calmer, the sights less crowded. Not sure where to go? Then keep reading  we&apos;ve picked three places from our bucket list that make perfect autumnal getaways, and are pretty easy to get to from the big cities. <a href="blog.html">read more</a></p>
+</div>
+<div class="article">
+    <div class="articleimg"><img src="image/fortela.png" alt="fortela"></div>
+    <h4>How to Transition Into Fall, the ISSIMO Way</h4>
+    <p>Yes, it&apos;s still hot outside, but, not long from now, the first hints of fall will be coming our way. While saying goodbye to summer can be a difficult task for many, we&apos;re actually pretty excited about the change of weather, from the chill in the air to the sound of crisp autumn leaves gently falling on the pavement as we return to the city.
+
+        Not ready to let go of your sunny season favourites just yet? No problemo. We&apos;ve listed four ways to transition your summer staples into fall must-haves, and look like a ChicISSIMO Italian lady in the process.<a href="fashion.html">read more</a> </p>
+</div>
+<div class="article">
+    <div class="articleimg">
+        <img src="image/dinnercapri.png" alt="dinnercapri">
+    </div>
+    <h4>A Short History of Ferragosto</h4>
+    <p>August 15 is a holiday in Italy, and one of the most anticipated days of the summer in the boot country. For many businesses, in fact, the date  which we call Ferragosto  marks the time to close shop and go on vacation for the rest of the month, be it by the beach or mountainside.
+
+        If you&apos;re in an Italian city, you&apos;ll notice its effect by the number of stores that shut down around Ferragosto, leaving urban centres empty and a little sleepy.
+        
+        It is, simply put, peak summer here.
+        
+        But how did it originate, and why do we love it so much? Also, how are you supposed to celebrate it? We&apos;ve got all the answers below. Read on, and happy Ferragosto! <a href="">read more</a></p>
+</div>
+
+
+
+</div>
+
+
+<!-- chatbox -->
+<div class="chatbox" id="chatbox">
+    <img src="image/chat2.png" alt="textus"  onclick="openForm()">
+    
+ </div>
+
+
+<div class="chat-popup" id="chat-popup">
+    
+      <h1>Chat</h1>
+  
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+  
+      <button type="submit" class="btn"> Send </button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div> 
+
+<!-- ------>
+
+
+
+
+
+
+
+
+
+</main>
+<footer>
+    <div class="footercontainer">
+        <!-- <div class="footerbox"></div> -->
+        <div class="footerbox">
+            <p>DISCOVER </p>
+            
+            <a href="homedecor.html">HOME DECOR</a>
+            <a href="">FASHION</a>
+            <a href="">BEAUTY</a>
+            <a href="">SHOP</a>
+            <a href="">FOOD</a>
+            <a href="">TRAVEL</a>
+            <a href="">GIFT GUIDE</a> 
+            
+            </p> 
+        </div>
+        <div class="footerbox">
+            <p>ISSIMO COMPANY
+            </p>
+           <a href="">ABOUT</a> 
+           <a href="">TERMS & CONDITIONS</a>
+
+            
+
+        </div>
+        <div class="footerbox"><p>CUSTOMER CARE
+        </p> 
+       <a href=""> FAQ</a>
+       <a href=""> MY ACCOUNT</a>
+       <a href="">CONTACT</a>
+    </div>
+
+        <div class="footerbox"><p>CONNECT WITH US
+        </p> 
+        <div class="socicon"> <img src="image/instagram (1).png" alt=""><p> <a href="">INSTAGRAM</a> </p> </div>
+        <div class="socicon"><img src="image/spotify.png" alt=""> <p><a href="">SPOTIFY</a> </p></div>
+        <div class="socicon"><img src="image/facebook (1).png" alt=""> <p><a href="">FACEBOOK</a> </p></div>
+        <div class="socicon"><img src="image/youtube.png" alt=""> <p><a href="">YOUTUBE</a> </p></div>
+
+
+    </div>
+        <div class="footerbox">
+
+            <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+            <label for="submit">  <textarea name="emailaddress" id="emailaddress" cols="25" rows="2"> enter your email address</textarea> </label>
+            <input type="submit" value="submit">
+            <p>By clicking “SUBMIT,” you agree to receive emails  <br> from ISSIMO and 
+                  accept our web terms of use and Privacy Policy.</p>
+        </div>
+    </div>
+    <div class="logofoot">
+        <img src="./image/logo.svg" alt="">
+        <p class="reserved">
+        
+       © ISSIMO 2022  I  All Rights Reserved  I  P.Iva</p>
+
+    </div>
+    
+
+</footer>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
